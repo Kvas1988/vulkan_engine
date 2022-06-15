@@ -35,6 +35,8 @@ namespace lve {
         LvePipeline(const LvePipeline&) = delete;
         LvePipeline operator=(const LvePipeline&) = delete;
 
+        void bind(VkCommandBuffer commandBuffer);
+
         static PipelineConfigInfo defaultPipelineConfigInfo(uint32_t width, u_int32_t height);
 
         private:
